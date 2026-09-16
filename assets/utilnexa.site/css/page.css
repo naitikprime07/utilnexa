@@ -1,0 +1,139 @@
+/* Page-specific styles for article pages */
+
+.content-box-ss {
+    font-family: "smiley", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #0f1115;
+    line-height: 1.75;
+}
+
+.content-box-ss img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+.content-box-ss p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #0f1115;
+}
+
+.content-box-ss h2 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin: 30px 0 20px;
+    color: #0f1115;
+}
+
+.content-box-ss h3 {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.4;
+    margin: 25px 0 15px;
+    color: #333;
+}
+
+.content-box-ss strong {
+    font-weight: 700;
+}
+
+.content-box-ss hr {
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    margin: 30px 0;
+}
+
+.content-box-ss a {
+    color: #07a9fe;
+    text-decoration: none;
+}
+
+.content-box-ss a:hover {
+    text-decoration: underline;
+}
+
+.content-box-ss blockquote {
+    margin: 20px 0;
+    padding: 15px 20px;
+    background-color: #f1f2f3;
+    border-left: 5px solid #ccc;
+    color: #666;
+    font-style: italic;
+}
+
+.content-box-ss ul,
+.content-box-ss ol {
+    padding-left: 40px;
+    margin-bottom: 24px;
+}
+
+.content-box-ss ul > li {
+    list-style-type: disc !important;
+    list-style: disc !important;
+    margin-bottom: 10px;
+}
+
+.content-box-ss ol > li {
+    list-style-type: decimal !important;
+    list-style: decimal !important;
+    margin-bottom: 10px;
+}
+
+/* Media-wrap image alignment */
+.media-wrap.image-wrap.align-center {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.media-wrap.image-wrap img {
+    border-radius: 12px;
+}
+
+@media screen and (max-width: 769px) {
+
+    .content-box-ss p,
+    .content-box-ss span {
+        font-size: 16px !important;
+    }
+
+    .content-box-ss h2 {
+        font-size: 22px;
+        margin: 25px 0 15px;
+    }
+
+    .content-box-ss h3 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .content-box-ss p,
+    .content-box-ss span {
+        font-size: 15px !important;
+    }
+
+    .content-box-ss h2 {
+        font-size: 20px;
+    }
+}
+/* Article heading matches the live blog on desktop and mobile. */
+.title {
+    max-width: 900px;
+    margin: 0 auto 20px;
+    font-size: 60px;
+    text-align: center;
+    font-weight: 700;
+    line-height: 1.1;
+    color: #333;
+}
+
+@media screen and (max-width: 769px) {
+    .title {
+        max-width: 100%;
+        font-size: 30px;
+    }
+}

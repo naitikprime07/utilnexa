@@ -1,0 +1,183 @@
+@font-face {
+    font-family: "smiley";
+    src: url("/assets/utilnexa.site/font/Outfit-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: 'Gulkave-Regular';
+    src: url("/assets/utilnexa.site/font/Gulkave-Regular.woff") format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: NZT-48;
+    src: url("/assets/utilnexa.site/font/NZT-48.woff2") format("woff2");
+    font-display: swap
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "smiley";
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+video {
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none;
+}
+
+em,
+i {
+    font-style: normal;
+}
+
+li {
+    list-style: none;
+}
+
+input {
+    border: 0;
+    outline: 0;
+}
+
+button {
+    outline: 0;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+.de_iv_adv {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.postionFixed {
+    width: 100%;
+    min-height: 60px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F8F8F8;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 9999;
+}
+
+footer {
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    background-color: #000000;
+    color: #fff;
+    font-size: 13px;
+    line-height: 1.5;
+    padding: 10px 0 10px 0;
+    margin-bottom: 60px;
+}
+
+footer a {
+    display: inline-block;
+    color: white;
+    margin: 0 5px;
+}
+
+.img-box {
+    position: relative;
+}
+
+.img-box::before {
+    content: '';
+    display: block;
+}
+
+.img-box>img {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+main {
+    flex: 1;
+}
+
+.limit_rows {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.limit_rows.one {
+    white-space: nowrap;
+}
+
+.limit_rows.two,
+.limit_rows.three,
+.limit_rows.four {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+.limit_rows.two {
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+}
+
+.limit_rows.three {
+    line-clamp: 3;
+    -webkit-line-clamp: 3;
+}
+
+.limit_rows.four {
+    line-clamp: 4;
+    -webkit-line-clamp: 4;
+}
+
+.center {
+    width: var(--all-width);
+    margin: 0 auto;
+}
+
+:root {
+    --all-width: 1320px;
+    --logo: 200px;
+    --searchBar: 280px;
+    --button: 36px;
+}
+
+@media screen and (max-width:769px) {
+    :root {
+        --all-width: 100%;
+        --searchBar: 100%;
+    }
+}
