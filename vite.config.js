@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [{
     name: 'include-static-blog-pages',
     writeBundle() {
-      for (const name of ['assets', 'renovation', ...readdirSync('.').filter(name => name.endsWith('.html') && name !== 'index.html')]) {
+      for (const name of ['assets', 'renovation', 'ads.txt', ...readdirSync('.').filter(name => name.endsWith('.html') && name !== 'index.html')]) {
         cpSync(resolve(name), resolve('dist', name), { recursive: true });
       }
     },
